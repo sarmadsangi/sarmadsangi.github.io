@@ -22,10 +22,6 @@ body {
     height: 100vh;
 }
 
-/* custom selectors */
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
-:--heading { margin-top: 0 }
-
 /* colors stuff */
 a {
     color: var(--highlightColor);
@@ -40,6 +36,7 @@ h1 {
     font-weight: 200;
     font-size: 3em;
     color: #444;
+    line-height: 1em;
 }
 
 p {
@@ -47,4 +44,8 @@ p {
     font-size: 1.4em;
     color: #444;
     line-height: 1.4em;
+}
+
+.panel {
+    padding: 2em;
 }

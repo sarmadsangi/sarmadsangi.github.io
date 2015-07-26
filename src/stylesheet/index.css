@@ -3,6 +3,7 @@
 --fontSize: 1rem;
 --mainColor: #12345678;
 --highlightColor: hwb(190, 35%, 20%);
+--fontFamily: 'Roboto', sans-serif;
 }
 
 /* custom media queries */
@@ -10,16 +11,15 @@
 
 /* some var() & calc() */
 body {
-color: var(--mainColor);
-
-font-size: var(--fontSize);
-line-height: calc(var(--fontSize) * 1.5);
-padding: calc((var(--fontSize) / 2) + 1px);
-}
-
-/* custom media query usage */
-@media (--viewport-medium) {
-body { font-size: calc(var(--fontSize) * 1.2); }
+    color: var(--mainColor);
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    line-height: calc(var(--fontSize) * 1.5);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* custom selectors */
@@ -28,8 +28,8 @@ body { font-size: calc(var(--fontSize) * 1.2); }
 
 /* colors stuff */
 a {
-color: var(--highlightColor);
-transition: color 1s; /* autoprefixed ! */
+    color: var(--highlightColor);
+    transition: color 1s; /* autoprefixed ! */
 }
 a:hover { color: gray(255, 50%) }
 a:active { color: rebeccapurple }
@@ -37,19 +37,14 @@ a:any-link { color: color(var(--highlightColor) blackness(+20%)) }
 
 /* font stuff */
 h1 {
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 2em;
+    font-weight: 200;
+    font-size: 3em;
+    color: #444;
 }
 
-table {
-font-variant-numeric: lining-nums;
-}
-
-/* filters */
-.blur {
-filter: blur(4px);
-}
-.sepia {
-filter: sepia(.8);
+p {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #444;
+    line-height: 1.4em;
 }

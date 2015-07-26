@@ -4,19 +4,27 @@
 
 /* some var() & calc() */
 body {
-color: #123456;
-color: rgba(18, 52, 86, 0.47059);
-
-font-size: 16px;
-font-size: 1rem;
-line-height: 24px;
-line-height: 1.5rem;
-padding: calc(0.5rem + 1px);
-}
-
-/* custom media query usage */
-@media (max-width: 50rem) {
-body { font-size: 1.2rem; }
+    color: #123456;
+    color: rgba(18, 52, 86, 0.47059);
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    line-height: 1.5rem;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
 }
 
 /* custom selectors */
@@ -29,9 +37,9 @@ h6 { margin-top: 0 }
 
 /* colors stuff */
 a {
-color: rgb(89, 185, 204);
--webkit-transition: color 1s;
-        transition: color 1s; /* autoprefixed ! */
+    color: rgb(89, 185, 204);
+    -webkit-transition: color 1s;
+            transition: color 1s; /* autoprefixed ! */
 }
 a:hover { color: #FFFFFF; color: rgba(255, 255, 255, 0.5) }
 a:active { color: rgb(102, 51, 153) }
@@ -39,26 +47,14 @@ a:link,a:visited { color: rgb(89, 142, 153) }
 
 /* font stuff */
 h1 {
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 2em;
+    font-weight: 200;
+    font-size: 3em;
+    color: #444;
 }
 
-table {
--webkit-font-feature-settings: "lnum";
-   -moz-font-feature-settings: "lnum";
-        font-feature-settings: "lnum";
-font-variant-numeric: lining-nums;
-}
-
-/* filters */
-.blur {
-filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
--webkit-filter: blur(4px);
-        filter: blur(4px);
-}
-.sepia {
-filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.5144 0.6152000000000001 0.1512 0 0 0.2792 0.7488 0.13440000000000002 0 0 0.21760000000000002 0.4272 0.30479999999999996 0 0 0 0 0 1 0" /></filter></svg>#filter');
--webkit-filter: sepia(.8);
-        filter: sepia(.8);
+p {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #444;
+    line-height: 1.4em;
 }

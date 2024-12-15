@@ -11,42 +11,66 @@
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
       <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,100,400' rel='stylesheet' type='text/css' />
       <link rel="stylesheet" href="dist/stylesheets/index.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <section class='panel'>
-      <a href="/">
-        <img class='profile' src='me.jpg' />
-      </a>
-      <h1>Sarmad Sangi</h1>
-      <p>Software Engineer</p>
-      <a class="active" href="/work">Work</a>
-      <a href="/about">About</a>
-      <a href="contact">Contact</a>
-      <div class="content">
-        <h3>Latest</h3>
-        <p>
-          <a target="_blank" href="https://gluecode.co">Gluecode.co</a> No code web app builder that generates readable code.
-          <br />
-          <a target="_blank" href="https://github.com/sarmadsangi/offline-kanban">Offline Kanban</a> Kanban board that just works in your browser (even when you have no internet).
-          <br />
-          <a target="_blank" href="http://pakistanjs.com">Pakistan.JS</a> A small community project to teach JS in urdu
-          <br />
-          <a target="_blank" href="https://github.com/sarmadsangi/redux-module">Redux Module</a> Reduced boilerplate for your redux apps.
-          <br />
-          <a target="_blank" href="https://github.com/Redmart/universal">Universal JS boilerplate</a> First attempt to build universal js app.
-          <br />
-          <a target="_blank" href="http://fooddy.me">Fooddy.me</a> Discover places to eat at or order from. (version #2 in WIP)
-        </p>
+      <div class="text-left">
+        <a href="/">
+          <img class='profile' src='me.jpg' />
+        </a>
+        <h1>Sarmad Sangi</h1>
+        <p>Software Engineer</p>
       </div>
-      <div class="content">
-        <h3>Startups</h3>
-        <p>
-          <a target="_blank" href="https://99.co">99.co</a> Leading front-end efforts to re-architect for performance and simplicity.
-          <br />
-          <a target="_blank" href="https://redmart.com">RedMart</a> Lead efforts for revamping website, built new mobile web (app like experience) and ad server for marketing automation.
-          <br />
-          <a target="_blank" href="https://mig.me">mig.me</a> Helped with android app and mobile web development.
-        </p>
+      <div class="content space-y-6">
+        <h3 class="text-xl font-semibold">Latest</h3>
+        <div class="flex flex-col space-y-4">
+          <div>
+            <a target="_blank" href="https://gluecode.co" class="text-blue-600 hover:text-blue-800">Gluecode.co (2022)</a>
+            <p class="mt-1 text-gray-600">No code web app builder that generates readable code.</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://github.com/sarmadsangi/offline-kanban" class="text-blue-600 hover:text-blue-800">Offline Kanban (2016)</a>
+            <p class="text-gray-600">Kanban board that just works in your browser (even when you have no internet).</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://github.com/sarmadsangi/redux-module" class="text-blue-600 hover:text-blue-800">Redux Module (2016)</a>
+            <p class="text-gray-600">Reduced boilerplate for your redux apps.</p>
+          </div>
+          <div>
+            <a target="_blank" href="http://fooddy.me" class="text-blue-600 hover:text-blue-800">Fooddy.me (2014-2015)</a>
+            <p class="text-gray-600">Discover places to eat at or order from. Similar to Yelp and Zomato built for South Asian region.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content space-y-6">
+        <h3 class="text-xl font-semibold">Startups</h3>
+        <div class="flex flex-col space-y-4">
+          <div>
+            <a target="_blank" href="https://zendesk.com" class="text-blue-600 hover:text-blue-800">Zendesk (2016-Present)</a>
+            <p class="text-gray-600">My work included React Migration, Apps Framework, ZCLI and Layout builder platform.</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://smarterhealth.sg/" class="text-blue-600 hover:text-blue-800">Smarter Health (2022)</a>
+            <p class="text-gray-600">Built a embedding platform that can be used by clinics to whitelabel smarter health app.</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://aspireapp.com/" class="text-blue-600 hover:text-blue-800">Aspire App (2018-2019)</a>
+            <p class="text-gray-600">Consulted as a lead developer for front-end and devops. Built a new team (hire and mentor).</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://99.co" class="text-blue-600 hover:text-blue-800">99.co (2016)</a>
+            <p class="text-gray-600">Lead front-end efforts to re-architect 99.co web app for performance and simplicity.</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://redmart.com" class="text-blue-600 hover:text-blue-800">RedMart (2014-2016, Aquired by Alibaba)</a>
+            <p class="text-gray-600">Lead efforts for revamping web app, built new mobile web (app like experience) and ad server for marketing automation.</p>
+          </div>
+          <div>
+            <a target="_blank" href="https://mig.me" class="text-blue-600 hover:text-blue-800">mig.me (2013-2014)</a>
+            <p class="mt-1 text-gray-600">Helped with android app and mobile web development.</p>
+          </div>
+        </div>
       </div>
     </section>
 
